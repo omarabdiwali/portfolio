@@ -5,14 +5,11 @@ import { grommet } from 'grommet/themes';
 
 export default function PageHeader() {
 
-  const history = useHistory();
-
   return (
     <Grommet theme={grommet} style={{width: "100%", position: "absolute", top: 0, right: 0}}>
       <Header background="black" pad="medium" height="xsmall">
         <Anchor
-          as={Link}
-          to="/"
+          href="/"
           icon={<Code color="accent-1" />}
           label="Omar Abdiwali"
           color="white"
