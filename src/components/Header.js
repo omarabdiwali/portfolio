@@ -45,6 +45,11 @@ export default function PageHeader() {
                       label: <Box pad="small">Github</Box>,
                       href: "https://github.com/omarabdiwali",
                       icon: <Github />
+                    },
+                    {
+                      label: <Box pad="small">LinkedIn</Box>,
+                      href: "https://www.linkedin.com/in/omar-abdiwali/",
+                      icon: <Linkedin />
                     }
                   ]}
                 />
@@ -61,7 +66,7 @@ export default function PageHeader() {
                 />
                 <Anchor href="mailto:omarabdiwali17@gmail.com" label="Email" color="white" icon={<MailOption color="accent-1" />} style={{boxShadow: "none"}} />
                 <Anchor href="https://github.com/omarabdiwali" target="_blank" label=" " icon={<Github color="accent-1" />} style={{ boxShadow: "none" }} />
-                <Anchor href="https://github.com/omarabdiwali" target="_blank" label=" " icon={<Linkedin color="accent-1" />} style={{boxShadow: "none"}} />
+                <Anchor href="https://www.linkedin.com/in/omar-abdiwali/" target="_blank" label=" " icon={<Linkedin color="accent-1" />} style={{boxShadow: "none"}} />
               </Box>
             )
           }
