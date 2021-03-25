@@ -2,7 +2,6 @@ import React from 'react';
 import { Header, Grommet, Menu, ResponsiveContext, Anchor, Box } from 'grommet';
 import { Menu as MenuIcon, Code, Home, Projects, MailOption, Github, Linkedin } from 'grommet-icons';
 import { grommet } from 'grommet/themes';
-import { useHistory, Link } from 'react-router-dom';
 
 export default function PageHeader() {
 
@@ -32,12 +31,12 @@ export default function PageHeader() {
                   items={[
                     {
                       label: <Box pad="small">Home</Box>,
-                      onClick: () => {history.push('/')},
+                      href: "/",
                       icon: <Home/>
                     },
                     {
                       label: <Box pad="small">Projects</Box>,
-                      onClick: () => {history.push('/projects')},
+                      href: "/projects",
                       icon: <Projects />
                     },
                     {
@@ -55,10 +54,9 @@ export default function PageHeader() {
               </Box>
             ) : (
               <Box justify="end" direction="row" gap="medium" style={{paddingLeft: "10%"}}>
-                <Anchor as={Link} to='/' label="Home" color="white" icon={<Home color="accent-1" />} style={{boxShadow: "none"}} />
+                <Anchor href='/' label="Home" color="white" icon={<Home color="accent-1" />} style={{boxShadow: "none"}} />
                   <Anchor
-                  as={Link}
-                  to="/projects"
+                  href="/projects"
                   label="Projects"
                   color="white"
                   icon={<Projects color="accent-1" />}
