@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeader from './components/Header';
-import Colour from './components/Home';
+import HomePage from './components/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Projects from './components/Projects';
 
@@ -10,7 +10,7 @@ function App() {
       <PageHeader />
       <Switch>
         <Route exact path="/">
-          <Colour />
+          <HomePage />
         </Route>
         <Route path="/projects">
           <Projects />
