@@ -10,7 +10,7 @@ import {
   Anchor,
   ResponsiveContext
 } from 'grommet';
-import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5 } from 'grommet-icons';
+import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain } from 'grommet-icons';
 import { FaChess, FaPython } from 'react-icons/fa';
 import { GiCardJoker } from 'react-icons/gi';
 import { DiJavascript1 } from 'react-icons/di';
@@ -72,6 +72,12 @@ const projects = [
     title: ["Blackjack", "https://github.com/omarabdiwali/blackjack", <GiCardJoker />],
     body: "A blackjack game that plays on your command line console. Players connect to it using a database, which stores their names and how much money they currently have. The game has the option to double, hit, and stand. The dealer stops hitting on 17, either hard or soft. It gives the option to play again, and add additional players. At the end of the game, it updates the amount of money.",
     footer: [ "https://gihub.com/omarabdiwali/blackjack" ]
+  },
+
+  {
+    title: [ "Portfolio", "https://github.com/omarabdiwali/portfolio", <Domain /> ],
+    body: "This is the code that made this website. Using Grommet UI components and React JS, I created my portfolio website. It is a simple website that has a header, a home page, and a projects page, where it showcases the projects that I've built. The front-page has a little introduction about myself, with characters appearing one after another after a certain period of time, and a world map. Clicking on the certain points updates the current country.",
+    footer: [ "https://github.com/omarabdiwali/portfolio", "https://omarabdiwali.vercel.app", "react" ]
   }
   
 ]
