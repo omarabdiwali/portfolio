@@ -3,7 +3,7 @@ import { Box, Grommet, WorldMap, ResponsiveContext, Heading, Grid, Text } from '
 import { grommet } from 'grommet/themes';
 import TextAnimation from 'react-animate-text';
 
-export default function Colour() {
+export default function HomePage() {
 
   const [country, setCountry] = useState("");
 
