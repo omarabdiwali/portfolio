@@ -10,10 +10,11 @@ import {
   Anchor,
   ResponsiveContext
 } from 'grommet';
-import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain } from 'grommet-icons';
+import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain, Notes } from 'grommet-icons';
 import { FaChess, FaPython } from 'react-icons/fa';
 import { GiCardJoker } from 'react-icons/gi';
 import { DiJavascript1 } from 'react-icons/di';
+import { SiTypescript } from 'react-icons/si';
 
 const theme = {
   themeMode: 'dark',
@@ -41,7 +42,7 @@ const projects = [
   {
     title: [ "Study Cards", "https://github.com/omarabdiwali/study-cards", <Book /> ],
     body: "A little website that allows users to add cards over periods of time, with each card having 3 wrong answers and one right one.It stores cards in your local storage, and has the ability to add, delete, or edit any of the cards that are available. Cards are created as an object, and are stored in an array.",
-    footer: [ "https://github.com/omarabdiwali/study-cards", "https://omarabdiwali.github.io/study-cards", "react" ]
+    footer: [ "https://github.com/omarabdiwali/study-cards", "https://omarabdiwali.github.io/study-cards", "react", "js" ]
   },
 
   {
@@ -65,7 +66,7 @@ const projects = [
   {
     title: [ "Movie Browse", "https://github.com/omarabdiwali/movie-browse", <Ticket /> ],
     body: "This is a React App that displays basic data about movies, tv shows, and whatever is trending about the entertainment that shows up. It uses The Movie DB API to gather data, giving twenty pages of movie and tv-shows. When you click them, it gives details about the show or film, like the length, basic description, and seasons with the number of episodes. The trending page shows the shows and movies that are currently trending.",
-    footer: [ "https://github.com/omarabdiwali/movie-browse", "https://omarabdiwali.github.io/movie-browse", "react" ]
+    footer: [ "https://github.com/omarabdiwali/movie-browse", "https://omarabdiwali.github.io/movie-browse", "react", "js" ]
   },
 
   {
@@ -77,7 +78,13 @@ const projects = [
   {
     title: [ "Portfolio", "https://github.com/omarabdiwali/portfolio", <Domain /> ],
     body: "This is the code that made this website. Using Grommet UI components and React JS, I created my portfolio website. It is a simple website that has a header, a home page, and a projects page, where it showcases the projects that I've built. The front-page has a little introduction about myself, with characters appearing one after another after a certain period of time, and a world map. Clicking on the certain points updates the current country.",
-    footer: [ "https://github.com/omarabdiwali/portfolio", "https://omarabdiwali.vercel.app", "react" ]
+    footer: [ "https://github.com/omarabdiwali/portfolio", "https://omarabdiwali.vercel.app", "react", "js" ]
+  },
+
+  {
+    title: ["Todo App", "https://github.com/omarabdiwali/todo", <Notes />],
+    body: "I created a simple todo app with Material UI and React Typescript. It uses the local storage to store your items as objects, with it having properties of the item, and if it was checked. It is fully functional to add, check off, and remove items. It is quite simple, but it waas my first time transitioning to Typescript for a project after using Javascript for every one of them. ",
+    footer: [ "https://github.com/omarabdiwali/todo", "https://todo-omarabdiwali.vercel.app", "react", "ts" ]
   }
   
 ]
@@ -146,7 +153,7 @@ export default function Projects() {
                         ) : (
                           <Reactjs color="accent-1" />
                         )}
-                        <DiJavascript1 color="#6FFFB0" size="2em" />
+                        {project.footer[3] === "js" ? <DiJavascript1 color="#6FFFB0" size="2em" /> : <SiTypescript color="#6FFFB0" size="2em" />}
                       </>
                     ) : (
                       <FaPython color="#6FFFB0" size="2em" />
