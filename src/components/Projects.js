@@ -117,7 +117,7 @@ export default function Projects() {
                         ) : (
                           <Reactjs color="accent-1" />
                         )}
-                        {project.footer[3] === "js" ? <DiJavascript1 color="#6FFFB0" size="2em" /> : <SiTypescript color="#6FFFB0" size="2em" />}
+                        {project.footer[3] === "ts" ? <SiTypescript color="#6FFFB0" size="2em" /> : <DiJavascript1 color="#6FFFB0" size="2em" />}
                       </>
                     ) : (
                       <FaPython color="#6FFFB0" size="2em" />
@@ -153,7 +153,7 @@ export default function Projects() {
                         ) : (
                           <Reactjs color="accent-1" />
                         )}
-                        {project.footer[3] === "js" ? <DiJavascript1 color="#6FFFB0" size="2em" /> : <SiTypescript color="#6FFFB0" size="2em" />}
+                        {project.footer[3] === "ts" ? <SiTypescript color="#6FFFB0" size="2em" /> : <DiJavascript1 color="#6FFFB0" size="2em" />}
                       </>
                     ) : (
                       <FaPython color="#6FFFB0" size="2em" />
