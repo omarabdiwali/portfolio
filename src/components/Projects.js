@@ -12,7 +12,7 @@ import {
 } from 'grommet';
 import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain, Notes } from 'grommet-icons';
 import { FaChess, FaPython } from 'react-icons/fa';
-import { GiCardJoker } from 'react-icons/gi';
+import { GiCardJoker, GiSnakeTongue } from 'react-icons/gi';
 import { DiJavascript1 } from 'react-icons/di';
 import { SiTypescript } from 'react-icons/si';
 
@@ -82,9 +82,15 @@ const projects = [
   },
 
   {
-    title: ["Todo App", "https://github.com/omarabdiwali/todo", <Notes />],
+    title: [ "Todo App", "https://github.com/omarabdiwali/todo", <Notes /> ],
     body: "I created a simple todo app with Material UI and React Typescript. It uses the local storage to store your items as objects, with it having properties of the item, and if it was checked. It is fully functional to add, check off, and remove items. It is quite simple, but it waas my first time transitioning to Typescript for a project after using Javascript for every one of them. ",
     footer: [ "https://github.com/omarabdiwali/todo", "https://todo-omarabdiwali.vercel.app", "react", "ts" ]
+  },
+
+  {
+    title: [ "Snake Game", "https://github.com/omarabdiwali/snake-game", <GiSnakeTongue /> ],
+    body: "This is the well known snake game. It was created with ReactJS and CSS, with no additional libraries. It stores the snake's position as an array, and is constantly moved every 125 milliseconds. When the snake 'eats' the food-cell, it 'unshifts' the array, and adds the position to the front. To make it move normally, it adds the next position to the front, and pops the last element in the array.",
+    footer: [ "https://github.com/omarabdiwali/snake-game", "https://snake-omarabdiwali.vercel.app", "react", "js"]
   }
   
 ]
