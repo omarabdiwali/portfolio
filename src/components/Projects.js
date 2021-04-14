@@ -10,11 +10,12 @@ import {
   Anchor,
   ResponsiveContext
 } from 'grommet';
-import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain, Notes, Book } from 'grommet-icons';
+import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain, Notes } from 'grommet-icons';
 import { FaChess, FaPython } from 'react-icons/fa';
 import { GiCardJoker, GiSnakeTongue } from 'react-icons/gi';
 import { DiJavascript1 } from 'react-icons/di';
 import { SiTypescript } from 'react-icons/si';
+import { MdSchool } from 'react-icons/md';
 
 const theme = {
   themeMode: 'dark',
@@ -40,7 +41,7 @@ const theme = {
 const projects = [
   
   {
-    title: [ "Study Cards", "https://github.com/omarabdiwali/study-cards", <Book /> ],
+    title: [ "Study Cards", "https://github.com/omarabdiwali/study-cards", <MdSchool /> ],
     body: "A little website that allows users to add cards over periods of time, with each card having 3 wrong answers and one right one.It stores cards in your local storage, and has the ability to add, delete, or edit any of the cards that are available. Cards are created as an object, and are stored in an array.",
     footer: [ "https://github.com/omarabdiwali/study-cards", "https://omarabdiwali.github.io/study-cards", "react", "js" ]
   },
