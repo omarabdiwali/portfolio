@@ -10,7 +10,7 @@ import {
   Anchor,
   ResponsiveContext
 } from 'grommet';
-import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain, Notes } from 'grommet-icons';
+import { Language, Github, Ticket, Book, LineChart, Twitter, Reactjs, Html5, Domain, Notes, Book } from 'grommet-icons';
 import { FaChess, FaPython } from 'react-icons/fa';
 import { GiCardJoker, GiSnakeTongue } from 'react-icons/gi';
 import { DiJavascript1 } from 'react-icons/di';
@@ -91,6 +91,12 @@ const projects = [
     title: [ "Snake Game", "https://github.com/omarabdiwali/snake-game", <GiSnakeTongue /> ],
     body: "This is the well known snake game. It was created with ReactJS and CSS, with no additional libraries. It stores the snake's position as an array, and is constantly moved every 125 milliseconds. When the snake 'eats' the food-cell, it 'unshifts' the array, and adds the position to the front. To make it move normally, it adds the next position to the front, and pops the last element in the array.",
     footer: [ "https://github.com/omarabdiwali/snake-game", "https://snake-omarabdiwali.vercel.app", "react", "js"]
+  },
+
+  {
+    title: ["Open Library", "https://github.com/omarabdiwali/openLibrary", <Book />],
+    body: "This website is a little library that I made using ReactJS. The data from the books are pulled from the Google Books API, and was styled using Chakra UI and Tailwind CSS. The home page shows the current Top 10 New York Times Best Sellers, and you have the ability to search, showing you the 20 most relevant searches according to Google Books.",
+    footer: [ "https://github.com/omarabdiwali/openLibrary", "https://open-library.vercel.app", "react", "js" ]
   }
   
 ]
