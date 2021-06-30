@@ -84,7 +84,7 @@ const projects = [
 
   {
     title: [ "Todo App", "https://github.com/omarabdiwali/todo", <Notes /> ],
-    body: "I created a simple todo app with Material UI and React Typescript. It uses the local storage to store your items as objects, with it having properties of the item, and if it was checked. It is fully functional to add, check off, and remove items. It is quite simple, but it waas my first time transitioning to Typescript for a project after using Javascript for every one of them. ",
+    body: "I created a simple todo app with Material UI and React Typescript. It uses the local storage to store your items as objects, with it having properties of the item, and if it was checked. It is fully functional to add, check off, and remove items. It is quite simple, but it was my first time transitioning to Typescript for a project after using Javascript for every one of them. ",
     footer: [ "https://github.com/omarabdiwali/todo", "https://todo-omarabdiwali.vercel.app", "react", "ts" ]
   },
 
