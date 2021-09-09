@@ -60,8 +60,8 @@ const projects = [
 
   {
     title: ["Chess", "https://github.com/omarabdiwali/chess", <FaChess /> ],
-    body: "A basic chess game that ends when the king is captured. Functions are called to find the valid positions for each type of piece. In this, castling is not an option, but the pawn can move two pieces on its first move, and promotes to a queen when it reaches the eighth rank. It was made using p5.js",
-    footer: [ "https://github.com/omarabdiwali/chess", "https://omarabdiwali.github.io/chess", "html" ]
+    body: "A online chess game where players are able to go against each other in private rooms. Using Socket.io, we create a room that allows 2 people to join, and store data such as positions and turns in a MongoDB Cluster. If the player disconnects, they are able to reconnect and continue playing. Valid moves are highlighted on the board when a piece is pressed, and it also allows for special moves such as castling and the pawn moving two spaces on its first movement. Checkmates are also calculated, ending the game when there is no available moves remaining.",
+    footer: [ "https://github.com/omarabdiwali/chess", "react", "js" ]
   },
 
   {
